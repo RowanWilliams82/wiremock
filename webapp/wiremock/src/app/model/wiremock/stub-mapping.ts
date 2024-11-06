@@ -73,7 +73,8 @@ export class StubMapping extends Proxy implements Item {
       this.request.url ||
       this.request.urlPattern ||
       this.request.urlPath ||
-      this.request.urlPathPattern) as string;
+      this.request.urlPathPattern ||
+      this.request.urlPathTemplate) as string;
   }
 
   getSubtitle(): string {
